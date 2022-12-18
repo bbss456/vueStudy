@@ -13,7 +13,6 @@
     <a v-for="topNavigator in topNavigator" :key="topNavigator"> {{topNavigator}} </a>
   </div>
     
-
   <div v-for="(oneroomlist) in oneroomlist" :key="oneroomlist">
       <img :src="oneroomlist.image" class="room-img">
       <h4>이름:{{oneroomlist.title}}</h4>
