@@ -1,16 +1,19 @@
 <template>
 
+  <!-- <header-vue> </header-vue> -->
+
   <div class="black-bg" v-if="modarBoolean==true">
     <div class="white-bg">
         <h4>상세페이지</h4>
         <p>상세페이지 내용</p>
     </div>
-  </div>
+  </div>'
 
   <div class="menu">
     <a v-for="topNavigator in topNavigator" :key="topNavigator"> {{topNavigator}} </a>
   </div>
     
+
   <div v-for="(oneroomlist) in oneroomlist" :key="oneroomlist">
       <img :src="oneroomlist.image" class="room-img">
       <h4>이름:{{oneroomlist.title}}</h4>
@@ -43,6 +46,7 @@ export default {
   },
 
   components: {
+
   }
 }
 </script>
