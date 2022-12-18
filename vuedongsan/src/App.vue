@@ -1,13 +1,13 @@
 <template>
 
-  <!-- <header-vue> </header-vue> -->
-
+  <test/>
+  <global-component></global-component>
   <div class="black-bg" v-if="modarBoolean==true">
     <div class="white-bg">
         <h4>상세페이지</h4>
         <p>상세페이지 내용</p>
     </div>
-  </div>'
+  </div>
 
   <div class="menu">
     <a v-for="topNavigator in topNavigator" :key="topNavigator"> {{topNavigator}} </a>
@@ -26,7 +26,7 @@
 <script>
 
 import data from './data.js'; 
-
+import test from './components/global-component';
 
 export default {
   name: 'App',
@@ -46,7 +46,7 @@ export default {
   },
 
   components: {
-
+    test
   }
 }
 </script>
