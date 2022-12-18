@@ -20,6 +20,7 @@
       <p>가격:{{oneroomlist.price}}</p>
   </div>
 
+
 </template>
 
 <script>
