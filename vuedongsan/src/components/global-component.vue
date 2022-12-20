@@ -1,13 +1,24 @@
 <template>
   <div>
+    <h2>{{message}}</h2>
     <button @click="showTitle">Click</button>
     <span>{{ title }}</span>
   </div>
 </template>
 
 <script>
+
   export default {
+    
     name: 'global-component',
+
+    props: {
+      message: {
+        type : String,
+        required: true
+      }
+    },
+
     data () {
       return {
         title: void 0

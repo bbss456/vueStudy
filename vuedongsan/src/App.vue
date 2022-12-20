@@ -1,7 +1,6 @@
 <template>
 
-  <test/>
-  <global-component></global-component>
+  <headerComponent message="안녕하세요"></headerComponent>
   <div class="black-bg" v-if="modarBoolean==true">
     <div class="white-bg">
         <h4>상세페이지</h4>
@@ -26,12 +25,15 @@
 <script>
 
 import data from './data.js'; 
-import test from './components/global-component';
+import headerComponent from './components/global-component';
+
 
 export default {
   name: 'App',
+  
   data() {
     return {
+      message:'hi',
       oneroomlist : data,
       modarBoolean : false,
       declarationCount : [0,0,0],
@@ -46,7 +48,7 @@ export default {
   },
 
   components: {
-    test
+   headerComponent
   }
 }
 </script>
