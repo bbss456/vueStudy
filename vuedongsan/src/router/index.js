@@ -3,12 +3,19 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import InputTag from '../components/first-view.vue';
 import NotFound from "../views/NotFound.vue";
+import Login from "../views/login-Home.vue";
 
 const routes = [
     {
       path: "/",
       name: "Home",
       component: Home,
+    },
+    
+    {
+      path: "/login",
+      name: "Login",
+      component: Login,
     },
     
     {
