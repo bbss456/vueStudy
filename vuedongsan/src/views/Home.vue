@@ -1,6 +1,6 @@
 <template>
-
   <headerComponent v-bind:message="message"></headerComponent>
+  <span>{{ $store.state.name}} </span>
   <div class="black-bg" v-if="modarBoolean==true">
     <div class="white-bg">
         <h4>상세페이지</h4>
@@ -8,10 +8,6 @@
     </div>
   </div>
 
-  <div class="menu">
-    <a v-for="topNavigator in topNavigator" :key="topNavigator"> {{topNavigator}} </a>
-  </div>
-    
   <div v-for="(oneroomlist) in oneroomlist" :key="oneroomlist">
       <img :src="oneroomlist.image" class="room-img">
       <h4>이름:{{oneroomlist.title}}</h4>
@@ -25,7 +21,7 @@
 <script>
 
 import data from '../data.js'; 
-import headerComponent from '../components/global-component';
+import headerComponent from '../components/header-components';
 
 
 export default {
