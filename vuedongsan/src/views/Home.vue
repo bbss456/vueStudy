@@ -1,21 +1,24 @@
 <template>
   <headerComponent v-bind:message="message"></headerComponent>
-  <span>{{ $store.state.name}} </span>
+  <!-- <span>{{ $store.state.name}} </span> -->
+
+  <div class="grid grid-cols-4 gap-4">
   <div class="black-bg" v-if="modarBoolean==true">
     <div class="white-bg">
         <h4>상세페이지</h4>
         <p>상세페이지 내용</p>
     </div>
   </div>
-
+ 
   <div v-for="(oneroomlist) in oneroomlist" :key="oneroomlist">
+    <div onclick="location.href='이동할 링크주소(URL)';"  style=" cursor: pointer;">
       <img :src="oneroomlist.image" class="room-img">
       <h4>이름:{{oneroomlist.title}}</h4>
       <p>가격:{{oneroomlist.content}}</p>
       <p>가격:{{oneroomlist.price}}</p>
+    </div>  
   </div>
-
-
+</div>
 </template>
 
 <script>
@@ -50,6 +53,7 @@ export default {
 </script>
 
 <style>
+
 div {
   box-sizing: border-box;
 }

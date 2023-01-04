@@ -49,6 +49,13 @@
                     {{SingIn}}
                     </a>
                 </div>
+
+                <div class="text-grey-dark mt-1">
+                    do you want to go back? 
+                    <a class="text-fuchsia-400" href="/">
+                    {{Home}}
+                    </a>
+                </div>
             </div>
         </div>
 </template>
@@ -62,10 +69,8 @@ export default {
       passwordcheck : null,
       SingIn : "Sing In",
       SingUp : "Sing Up",
-      modarBoolean : false,
-      declarationCount : [0,0,0],
-      topNavigator : ['Home', 'Shop', 'About'],
-      products: ['역삼동원룸', '천호동원룸', '마포구원룸']
+      Home : "Home"
+
     }
   },
   methods : {
